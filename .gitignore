@@ -1,3 +1,8 @@
 node_modules
 build
 static
+/expensemanager/src/main/resources/webapp/
+/expensemanager/out/
+/expensemanager/gradle/
+/expensemanager/.idea/
+/expensemanager/.gradle/
