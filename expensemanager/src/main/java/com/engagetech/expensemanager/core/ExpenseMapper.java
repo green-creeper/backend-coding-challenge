@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class ExpenseMapper implements ResultSetMapper<Expense> {
+
     @Override
     public Expense map(int index, ResultSet resultSet, StatementContext ctx) throws SQLException {
         return new Expense(resultSet.getInt("ID"),

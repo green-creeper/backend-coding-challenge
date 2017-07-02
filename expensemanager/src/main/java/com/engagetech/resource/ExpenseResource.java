@@ -28,7 +28,6 @@ public class ExpenseResource {
     @POST
     public Expense saveExpense(Expense expense) {
         expenseDAO.insert(expense);
-
         return expense;
     }
 }

@@ -12,7 +12,6 @@ public class DatabaseTest extends JdbiUnitTest{
 
     private ExpenseDAO expenseDAO;
 
-
     @Test
     public void createsExpense() {
         Expense expense = new Expense(0L, new DateTime(2017, 07, 02, 03,00).toDate(), BigDecimal.valueOf(200), "Because");

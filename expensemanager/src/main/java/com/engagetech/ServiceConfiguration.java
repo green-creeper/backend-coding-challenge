@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 
 public class ServiceConfiguration extends Configuration {
 
-    private String defaultName = "DropAngular Service";
+    private String defaultName = "Expense Service";
 
     @Valid
     @NotNull
