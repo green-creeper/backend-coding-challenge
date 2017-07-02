@@ -48,4 +48,24 @@ public class Expense {
     public String getReason() {
         return reason;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Expense expense = (Expense) o;
+
+        if (!date.equals(expense.date)) return false;
+        if (!amount.equals(expense.amount)) return false;
+        return reason.equals(expense.reason);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = date.hashCode();
+        result = 31 * result + amount.hashCode();
+        result = 31 * result + reason.hashCode();
+        return result;
+    }
 }
